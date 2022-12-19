@@ -1,9 +1,9 @@
 public class IndexBodyMass {
 
-    public double imt(double a, double b) {
-        double result = a / (b * b);
-        //a - вес в кг;
-        //b - рост в м;
+    public double imt(double weight, double height) {
+        double heightInMetre = height / 100;
+        double result = weight / (heightInMetre * heightInMetre);
+
         return result;
     }
 }
